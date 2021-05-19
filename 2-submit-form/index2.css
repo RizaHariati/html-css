@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #6a1f19;
+  --primary-light: #f8cbb4;
+  --secondary-color: #a80c17;
+  --secondary-light: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 35px;
+  background-color: var(--primary-color);
+  max-width: 60%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .header {
+  background-image: url("../img/art-1839006_640.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.container .header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary-light);
+  text-shadow: 0px 2px 8px var(--primary-light);
+}
+
+.form {
+  margin: 20px 20px 0px 20px;
+  font-size: 0.9rem;
+}
+
+.form div {
+  margin-bottom: 3px;
+}
+
+.form label {
+  display: block;
+  width: 47%;
+  float: left;
+}
+
+.form label:after {
+  content: " :";
+}
+
+.form input {
+  width: 45%;
+}
+
+.form .btn {
+  display: block;
+  margin: 20px auto;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid var(--secondary-color);
+}
+
+.form .btn:hover {
+  background-color: var(--primary-light);
+}
+
+.zodiac {
+  position: relative;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.zodiac h4,
+.zodiac h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.zodiac p {
+  font-size: 0.7rem;
+}
+
+.zodiac i {
+  position: absolute;
+  right: 10px;
+}
+
+.zodiac i:hover {
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin-top: 30px;
+    background-color: var(--primary-color);
+    min-width: 70%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .container .header {
+    background-image: url("./img/art-1839006_640.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .container .header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-light);
+    text-shadow: 0px 2px 8px var(--primary-light);
+  }
+  .form {
+    margin: 20px 20px 0px 20px;
+    font-size: 0.9rem;
+  }
+  .form div {
+    margin-bottom: 3px;
+  }
+  .form label {
+    display: block;
+    width: 47%;
+    float: left;
+  }
+  .form label:after {
+    content: " :";
+  }
+  .form input {
+    width: 45%;
+  }
+  .form .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+  }
+  .form .btn:hover {
+    background-color: var(--primary-light);
+  }
+  .zodiac {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .zodiac h4,
+  .zodiac h5 {
+    padding: 0;
+    margin: 0;
+  }
+  .zodiac p {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
