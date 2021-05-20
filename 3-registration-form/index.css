@@ -1,0 +1,180 @@
+:root {
+  --dark-1: #463f3a;
+  --dark-2: #8a817c;
+  --light-1: #f4f3ee;
+  --light-2: whitesmoke;
+  --medium-1: #bcb8b1;
+  --medium-2: #e0afa0;
+}
+
+body {
+  margin: auto;
+  width: 80%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--dark-1);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+
+header .line {
+  margin: 0;
+  background-color: var(--medium-2);
+  width: 150px;
+  height: 5px;
+}
+
+header h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: var(--light-1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 100px;
+}
+
+.container .head {
+  background-image: url("./img/bouquet-168832_640.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container .form-structure {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+
+.container .form-structure form ul {
+  border: 1px solid var(--medium-2);
+  padding: 10px 0px 0px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.container .form-structure form ul li {
+  margin-bottom: 10px;
+  color: var(--dark-2);
+}
+
+.container .form-structure form ul li label {
+  height: 1rem;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.container .form-structure form ul li input,
+.container .form-structure form ul li select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 95%;
+  height: 2rem;
+}
+
+.container .form-structure form ul li input:hover,
+.container .form-structure form ul li select:hover {
+  -webkit-box-shadow: 0px 1px 4px 0px var(--dark-2);
+  box-shadow: 0px 1px 4px 0px var(--dark-2);
+}
+
+.container .form-structure .form-foot .vertical-line {
+  display: block;
+  background-color: var(--medium-2);
+  height: 50px;
+  width: 2px;
+  float: left;
+}
+
+.container .form-structure .form-foot p {
+  color: var(--dark-2);
+  font-size: 0.8rem;
+  margin-left: 10px;
+  width: 330px;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: var(--medium-2);
+  color: var(--light-1);
+  padding: 10px 40px 10px 40px;
+  margin: 5px;
+  border: 0;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: var(--dark-2);
+  -webkit-box-shadow: 0px 1px 4px 0px var(--dark-2);
+  box-shadow: 0px 1px 4px 0px var(--dark-2);
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    text-align: center;
+  }
+  header .line {
+    margin: auto;
+  }
+  .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 3fr;
+    grid-template-rows: 2fr 3fr;
+  }
+  .container .head {
+    background-image: url("./img/flowers-1716747_640.jpg");
+  }
+  .container .form-structure form ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    list-style-position: inside;
+  }
+  .btn-button {
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    -ms-grid-rows: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+  }
+  .container .form-structure form ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    list-style-position: inside;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

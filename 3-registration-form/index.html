@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bunga</h1>
+      <div class="line"></div>
+      <h2>Flower Arranging Class</h2>
+    </header>
+
+    <div class="container">
+      <div class="head"></div>
+      <div class="form-structure">
+        <div class="form-head">
+          <h2>Join Us!</h2>
+        </div>
+        <form action="submit" class="form">
+          <ul>
+            <li>
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" />
+            </li>
+            <li>
+              <label for="name2">Last Name</label>
+              <input type="text" name="name2" id="name2" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="phoneNumber">Phone Number</label>
+              <input type="number" name="phoneNumber" id="phoneNumber" />
+            </li>
+            <li>
+              <label for="city">City</label>
+              <select name="city" id="city">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Medan">Medan</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Jayapura">Jayapura</option>
+              </select>
+            </li>
+            <li>
+              <label for="info">Where did you hear about us?</label>
+              <select name="info" id="info">
+                <option value="family">Family/Friends</option>
+                <option value="social">Social Media</option>
+                <option value="internet">Internet</option>
+                <option value="advertising">Advertising</option>
+                <option value="news">News</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+            <li>
+              <label for="level">Which level would you take?</label>
+              <select name="level" id="level">
+                <option value="beginner">Beginner ($20/mo)</option>
+                <option value="intermediate">Intemediate ($30/mo)</option>
+                <option value="intermediate">Intemediate ($50/mo)</option>
+              </select>
+            </li>
+            <li>
+              <label for="package">Pay 4 month course for 20% discount?</label>
+              <select name="package" id="package">
+                <option value="yes">Yes</option>
+                <option value="yes">No</option>
+              </select>
+            </li>
+          </ul>
+          <div class="join">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              >Also join Bunga Flower Arranging Club for free</label
+            >
+          </div>
+          <div class="btn-button">
+            <button class="btn">Join</button>
+          </div>
+        </form>
+        <div class="form-foot">
+          <div class="vertical-line"></div>
+          <div>
+            <p>
+              You will be enrolled our nearest scheduled class : Spring, Summer
+              or Autumn
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
