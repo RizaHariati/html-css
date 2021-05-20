@@ -1,0 +1,182 @@
+:root {
+  --primary-color: #2d2b34;
+  --primary-light: #e2decf;
+  --secondary-color: #333436;
+  --secondary-light: #eaf0f7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: var(--primary-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%;
+  background-color: var(--secondary-color);
+  border: 1.5px solid var(--primary-light);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .header {
+  background-image: url("./img/coins-5029102_640.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.container .header h1 {
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 50px 20px 20px;
+  color: var(--primary-light);
+  text-shadow: 0px 2px 8px var(--primary-color);
+}
+
+.form {
+  margin: 10px;
+}
+
+.form div {
+  margin-top: 10px;
+}
+
+.form div:before {
+  content: " : ";
+}
+
+.form label {
+  display: block;
+  width: 40%;
+  float: left;
+}
+
+.form input {
+  width: 50%;
+  background-color: var(--secondary-light);
+  height: 1.2rem;
+}
+
+.form select {
+  background-color: var(--secondary-light);
+}
+
+.btn {
+  font-variant: small-caps;
+  margin: 20px auto;
+  display: block;
+  width: 40%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+}
+
+.zodiac {
+  position: relative;
+  border: 1.2px solid var(--primary-light);
+  display: block;
+  border-radius: 5px;
+  font-family: arial;
+  font-size: 0.7rem;
+  text-align: justify;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: var(--secondary-color);
+  color: var(--secondary-light);
+}
+
+.zodiac h1 {
+  text-align: center;
+}
+
+.zodiac i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--secondary-light);
+}
+
+.zodiac i:hover {
+  color: var(--primary-light);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin-top: 45px;
+    width: 70%;
+  }
+  .container .header h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .form {
+    margin: 10px;
+  }
+  .form div {
+    margin-top: 10px;
+  }
+  .form div:before {
+    content: " : ";
+  }
+  .form label {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+  .form input {
+    width: 60%;
+    height: 1.1rem;
+  }
+  .zodiac h1 {
+    font-variant: small-caps;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin-top: 40px;
+    width: 75%;
+  }
+  .container .header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .form label {
+    width: 30%;
+    font-size: 0.8rem;
+  }
+  .form input {
+    width: 60%;
+    height: 1rem;
+  }
+  .zodiac h1 {
+    font-variant: small-caps;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
