@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #8c019e;
-  --primary-light: #fff6ff;
-  --primary-dark: #4f4350;
-  --primary-medium: #a885ab;
-  --accent: #f66100;
+  --primary-color: #4a4e69;
+  --primary-light: #f2e9e4;
+  --primary-dark: #22223b;
+  --primary-medium: #9a8c98;
+  --accent: #c9ada7;
 }
 
 body {
@@ -133,6 +133,7 @@ main {
   -ms-flex-align: baseline;
   align-items: baseline;
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .card .items ul li i {
