@@ -1,0 +1,185 @@
+:root {
+  --primary-color: #8c019e;
+  --primary-light: #fff6ff;
+  --primary-dark: #4f4350;
+  --primary-medium: #a885ab;
+  --accent: #f66100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+}
+
+header h1 {
+  font-family: cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+header h2 {
+  margin-top: 0;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 280px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 4px 0px var(--primary-medium);
+  box-shadow: 0px 1px 4px 0px var(--primary-medium);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 2px 8px 0px var(--primary-dark);
+  box-shadow: 0px 2px 8px 0px var(--primary-dark);
+}
+
+.card .title h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: var(--primary-dark);
+}
+
+.card .title .line {
+  display: block;
+  background-color: var(--primary-medium);
+  height: 3px;
+  margin: 20px;
+  margin-top: 0;
+}
+
+.card .name {
+  margin-top: 5px;
+}
+
+.card .name .speed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card .name i {
+  margin-right: 10px;
+  color: var(--primary-dark);
+}
+
+.card .name h2 {
+  color: var(--primary-color);
+  padding: 0;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.card .name p {
+  margin: 0;
+}
+
+.card .items {
+  margin: 15px 15px 0 15px;
+  color: var(--primary-medium);
+}
+
+.card .items p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.card .items ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.card .items ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  font-size: 0.8rem;
+}
+
+.card .items ul li i {
+  margin-right: 10px;
+}
+
+.card .items ul li h3 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.card .price h3 {
+  font-size: 2rem;
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.card .price h5 {
+  margin: 0px;
+}
+
+.card .price i {
+  color: var(--accent);
+  margin: 10px;
+}
+
+.card .btn {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+}
+
+.card .btn:hover {
+  background-color: var(--accent);
+}
+
+footer {
+  color: var(--primary-color);
+}
+
+.extra {
+  color: var(--primary-light) !important;
+}
+/*# sourceMappingURL=styles.css.map */
