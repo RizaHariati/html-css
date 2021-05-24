@@ -1,0 +1,81 @@
+:root {
+  --primary-dark: #264653;
+  --primary-medium: #8f7158;
+  --primary-light: #ffeace;
+  --accent: #f39530;
+  --primary-font: var(--primary-font);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--primary-light);
+}
+
+nav {
+  background-color: var(--primary-dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 30px 5%;
+}
+
+nav .logo {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: auto;
+}
+
+nav .logo h2 {
+  color: var(--accent);
+}
+
+nav .menu {
+  cursor: pointer;
+}
+
+nav .menu ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+nav .menu ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav .menu ul li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+nav .menu ul li a:hover {
+  color: var(--accent);
+}
+
+nav button {
+  margin-left: 20px;
+  background-color: var(--primary-medium);
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+nav button:hover {
+  background-color: var(--accent);
+}
+/*# sourceMappingURL=styles.css.map */
