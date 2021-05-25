@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  color: var(--primary-light);
+}
+
+:root {
+  --primary-color: #130905;
+  --primary-medium: #e2961b;
+  --primary-light: #f8e7cb;
+  --accent-color: #e11d0b;
+  --primary-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+nav {
+  height: 80px;
+  background-color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+nav .logo {
+  z-index: 2;
+  font-size: 25px;
+  color: var(--accent-color);
+  font-weight: 900;
+}
+
+nav .menu ul li {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+nav .menu ul li a {
+  padding: 7px 10px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+nav .menu ul li a.active,
+nav .menu ul li a:hover {
+  background-color: var(--primary-medium);
+}
+
+nav .menu ul li a:hover {
+  opacity: 0.8;
+}
+
+nav .checkbtn {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  display: none;
+  font-size: 25px;
+}
+
+nav #check {
+  display: none;
+}
+
+main {
+  z-index: 0;
+  position: relative;
+  height: calc(100vh - 80px);
+  background-position: center;
+  background-size: cover;
+}
+
+main footer {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  nav .menu {
+    z-index: 1;
+    position: fixed;
+    right: -100%;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent-color);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .menu ul {
+    margin-top: 80px;
+  }
+  nav .menu ul li {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 20px;
+  }
+  nav .menu ul li a {
+    padding: 7px 20px;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  nav .menu ul li a.active,
+  nav .menu ul li a:hover {
+    background-color: var(--primary-color);
+  }
+  nav .menu ul li a:hover {
+    opacity: 0.7;
+  }
+  nav .checkbtn {
+    display: block;
+    font-size: 25px;
+  }
+  nav .checkbtn:hover {
+    font-size: 30px;
+  }
+  nav #check:checked ~ .menu {
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
