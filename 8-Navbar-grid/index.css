@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #b54a04;
+  --primary-dark: #1b0f04;
+  --primary-medium: #d99f3c;
+  --primary-light: #f7e8d8;
+  --primary-font: Trebuchet MS;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--primary-light);
+  font-family: var(--primary-font);
+  list-style: none;
+}
+
+nav {
+  position: relative;
+  height: 85px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+nav .chkbtn {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  margin-left: auto;
+  display: none;
+}
+
+nav .chkbtn i {
+  font-size: 2rem;
+}
+
+nav .chkbtn i:hover {
+  color: var(--primary-medium);
+}
+
+nav #check {
+  display: none;
+}
+
+nav .logo {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  font-weight: 800;
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav .menu {
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .menu ul li {
+  display: inline-block;
+}
+
+nav .menu ul li a {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 7px 5px;
+  border-radius: 1px;
+}
+
+nav .menu ul li a.active,
+nav .menu ul li a:hover {
+  background-color: var(--primary-medium);
+}
+
+nav .menu .social {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: auto;
+}
+
+nav .menu .social i {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 0.2rem;
+  font-size: 1.3rem;
+}
+
+nav .menu .social i:hover {
+  color: var(--primary-medium);
+}
+
+main {
+  position: absolute;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: calc(100vh - 85px);
+  width: 100%;
+  top: 85px;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main header {
+  position: absolute;
+  font-size: 75px;
+  opacity: 0.85;
+  top: 20px;
+}
+
+main .image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+main footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px) {
+  nav .chkbtn {
+    display: block;
+  }
+  nav #check:checked ~ .menu {
+    left: 0;
+  }
+  nav .menu {
+    position: absolute;
+    top: 85px;
+    left: -100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #d99f3c;
+    width: 100%;
+    height: calc(100vh - 85px);
+  }
+  nav .menu ul {
+    margin-top: 50px;
+  }
+  nav .menu ul li {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.4rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  nav .menu ul li a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 7px 15px;
+    border-radius: 5px;
+  }
+  nav .menu ul li a.active,
+  nav .menu ul li a:hover {
+    background-color: var(--primary-dark);
+  }
+  nav .menu ul li a:hover {
+    opacity: 0.8;
+  }
+  nav .menu .social {
+    margin: 10px auto;
+  }
+  nav .menu .social i {
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    font-size: 2.5rem;
+  }
+  nav .menu .social i:hover {
+    color: var(--primary-dark);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
