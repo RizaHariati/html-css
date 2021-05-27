@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      color: #e3e0db;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      font-size: 0.9rem;
+      height: 60px;
+      background-color: #1f1d14;
+      text-align: center;
+    }
+
+    nav ul {
+      line-height: 60px;
+    }
+
+    nav ul li {
+      -webkit-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+      position: relative;
+      display: inline-block;
+      top: 100%;
+      left: 0;
+      width: 80px;
+      -webkit-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+    }
+
+    nav ul li ul {
+      line-height: 40px;
+      display: none;
+      position: absolute;
+      top: 100%;
+    }
+
+    nav ul li ul li {
+      background-color: #446484;
+      position: relative;
+    }
+
+    nav ul li ul li ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+
+    nav ul li ul li ul li {
+      display: none;
+      background-color: #a98281;
+    }
+
+    nav ul li ul li:hover {
+      border: 1px solid #e3e0db;
+    }
+
+    nav ul li ul li:hover ul li {
+      display: block;
+    }
+
+    nav ul li:hover {
+      border: 1px solid #e3e0db;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    .box {
+      width: 100%;
+      height: calc(100vh - 60px);
+      background-size: cover;
+      background-position: center;
+    }
+    /*# sourceMappingURL=styles.css.map */
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+          <ul>
+            <li><a href="#">Home1</a></li>
+            <li><a href="#">Home2</a></li>
+            <li><a href="#">Home3</a></li>
+            <li><a href="#">Home4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Info</a>
+          <ul>
+            <li><a href="#">info1</a></li>
+            <li><a href="#">info2</a></li>
+            <li><a href="#">info3</a></li>
+            <li><a href="#">info4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About</a>
+          <ul>
+            <li><a href="#">About1</a></li>
+            <li><a href="#">About2</a></li>
+            <li><a href="#">About3</a></li>
+            <li><a href="#">About4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Survey</a>
+          <ul>
+            <li><a href="#">Survey1</a></li>
+            <li><a href="#">Survey2</a></li>
+            <li><a href="#">Survey3</a></li>
+            <li>
+              <a href="#">Survey4</a>
+              <ul>
+                <li><a href="#">Result1</a></li>
+                <li><a href="#">Result2</a></li>
+                <li><a href="#">Result3</a></li>
+                <li><a href="#">Result4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="box"
+      style="background-image: url('./img/flowers-1716747_640.jpg')"
+    ></div>
+  </body>
+</html>

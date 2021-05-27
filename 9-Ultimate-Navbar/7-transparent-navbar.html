@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+    <title>transparent navbar</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      color: #e3e0db;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      position: absolute;
+      background-color: #1f1d14;
+      width: 60%;
+      border-radius: 5px;
+      opacity: 0.7;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      width: 100%;
+    }
+
+    nav ul li a {
+      border: 1px solid #1f1d14;
+      text-align: center;
+      display: block;
+      height: 40px;
+      -webkit-transition: all 0.6s ease-in;
+      transition: all 0.6s ease-in;
+    }
+
+    nav ul li a:hover {
+      border: 1px solid #e3e0db;
+      opacity: 1;
+    }
+
+    .box {
+      z-index: -1;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+    }
+    /*# sourceMappingURL=styles.css.map */
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Survey</a></li>
+        <li><a href="#">Content</a></li>
+      </ul>
+    </nav>
+    <div
+      class="box"
+      style="background-image: url('./img/bouquet-168832_1280.jpg')"
+    ></div>
+  </body>
+</html>

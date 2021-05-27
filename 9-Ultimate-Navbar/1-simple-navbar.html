@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position & layout</title>
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    nav ul {
+      background-color: #f6e4ed;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      width: 100px;
+    }
+
+    nav li a {
+      display: block;
+      -webkit-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+      text-align: center;
+      color: #644e4f;
+      border: 1px solid #f6e4ed;
+    }
+
+    nav li a:hover {
+      -webkit-transform: rotate(5deg);
+      transform: rotate(5deg);
+      -webkit-transition: 1s;
+      transition: 1s;
+      border: 1px solid #644e4f;
+      border-radius: 3px;
+    }
+    /*# sourceMappingURL=styles.css.map */
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
