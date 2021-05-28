@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/413bf5df11.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+    <title>Camera</title>
+  </head>
+  <style>
+    :root {
+      --primary-color: #596172;
+      --primary-dark: #2b2f33;
+      --primary-medium: #81726a;
+      --primary-light: #e3dac7;
+      --primary-font: Segoe UI;
+      --secondary-font: Geneva;
+      --secondary-color: #b18c57;
+      --accent: #59705c;
+      --primary-transition: all 0.4s ease-in-out;
+    }
+
+    * {
+      color: var(--primary-light);
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      font-family: var(--primary-font);
+    }
+
+    .button {
+      position: relative;
+      height: 60px;
+      background-color: var(--primary-color);
+      color: var(--primary-light);
+      text-align: center;
+      font-size: 0.8rem;
+      -webkit-box-shadow: inset 0px 1px 4px 0px black;
+      box-shadow: inset 0px 1px 4px 0px black;
+    }
+
+    .button #check {
+      display: none;
+    }
+
+    .button #check:checked ~ .image {
+      top: 120px;
+      height: calc(100vh - 120px);
+    }
+
+    .button .logo {
+      cursor: pointer;
+      -webkit-transition: var(--primary-transition);
+      transition: var(--primary-transition);
+    }
+
+    .button .logo i {
+      -webkit-transition: var(--primary-transition);
+      transition: var(--primary-transition);
+      margin-top: 10px;
+      border: 1px solid var(--primary-light);
+      border-radius: 20px;
+      padding: 5px;
+    }
+
+    .button .logo:hover {
+      -webkit-box-shadow: inset 0px 1px 2px 0px var(--primary-dark);
+      box-shadow: inset 0px 1px 2px 0px var(--primary-dark);
+      color: var(--secondary-color);
+    }
+
+    .button .logo:hover i {
+      color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+    }
+
+    nav {
+      height: 60px;
+      background-color: var(--primary-dark);
+      line-height: 60px;
+    }
+
+    nav ul {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    nav ul li {
+      width: 100%;
+      border: 1px solid var(--primary-dark);
+      -webkit-transition: var(--primary-transition);
+      transition: var(--primary-transition);
+    }
+
+    nav ul li a {
+      color: var(--primary-light);
+    }
+
+    nav ul li:hover {
+      -webkit-box-shadow: inset 0px 1px 2px 0px var(--primary-color);
+      box-shadow: inset 0px 1px 2px 0px var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+
+    nav ul li:hover a {
+      color: white;
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      height: calc(100vh - 60px);
+      background-position: center;
+      background-size: cover;
+      -webkit-transition: var(--primary-transition);
+      transition: var(--primary-transition);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      padding: 2%;
+    }
+
+    .image h1 {
+      font-size: 50px;
+      text-shadow: 0px 2px 5px var(--secondary-color);
+      color: var(--primary-dark);
+      font-variant: small-caps;
+    }
+
+    .image h3 {
+      margin-top: auto;
+    }
+
+    .image .agree button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: var(--accent);
+      border: none;
+      font-variant: small-caps;
+    }
+
+    @media screen and (max-width: 700px) {
+      .button #check:checked ~ .image {
+        top: 220px;
+        height: calc(100vh - 220px);
+      }
+      nav {
+        height: 160px;
+        background-color: var(--primary-dark);
+        line-height: 39px;
+      }
+      nav ul {
+        text-align: center;
+        display: block;
+      }
+      nav ul li {
+        border: 1px solid var(--primary-color);
+      }
+      .image {
+        padding: 10%;
+      }
+    }
+    /*# sourceMappingURL=styles.css.map */
+  </style>
+  <body>
+    <div class="button">
+      <input type="checkbox" name="check" id="check" />
+      <label for="check"
+        ><div class="logo">
+          <i class="fas fa-camera-retro"></i><br />Camera
+        </div></label
+      >
+      <div class="image" style="background-image: url('./img/img-8.jpg')">
+        <h1>Camera</h1>
+        <h3>DLSR Camera is still better than Camera Phone</h3>
+        <div class="agree">
+          <button>Agree</button>
+          <p>click if you are agree</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-info"></i> Info</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-address-card"></i> About</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-poll-h"></i> Survey</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
